@@ -15,16 +15,23 @@ for(let i=0;i<logo.length;i++){
 console.log(logo);
 
 
-$(window).scroll(function () {
-  $('#logo').each(function () {
-      var imagePos = $(this).offset().top;
-      var imageHeight = $(this).height();
-      var topOfWindow = $(window).scrollTop();
 
-      if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
-          $(this).addClass("line-anim");
-      } else {
-          $(this).removeClass("line-anim");
-      }
-  });
+
+
+const nav = document.querySelector(".hid");
+const burger = document.querySelector(".burger");
+const links = nav.querySelectorAll("a");
+
+burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+   
+    burger.classList.toggle("toggle");
+    
+});
+
+links.forEach(link => {
+    link.addEventListener("click", () =>{
+        nav.classList.toggle("nav-open");
+        burger.classList.toggle("toggle");
+    });
 });
