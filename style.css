@@ -220,6 +220,7 @@ nav ul li {
   width: 45vw;
  flex-direction: column;
  height: 20vh; 
+ flex: 1 1 40rem;
 }
 
 .intro-text {
@@ -239,7 +240,7 @@ nav ul li {
 }
 
 .intro-text p{
-  flex: 1 1 40rem;
+ 
   font-size: 2.4rem;
  
 }
