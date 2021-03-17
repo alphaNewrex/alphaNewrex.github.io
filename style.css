@@ -253,7 +253,8 @@ nav ul li {
  
 }
 .intro-img {
-  
+  flex: 1 1 40rem;
+
   overflow: hidden;
     
   
@@ -524,7 +525,7 @@ footer {
  
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1000px) {
   #commemts {
     width: 10rem;
     
@@ -533,9 +534,13 @@ footer {
   .intro-desc {
   
     display: flex;
-     width: 100%;
+    
     flex-direction: column;
     height: 45vh; 
+   }
+
+   .intro-img{
+     overflow: hidden;
    }
   footer ul {
     order: 1;
